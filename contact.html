@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-dark">
+
+    <!-- Nav-Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark sticky-top " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <h2>TitanFit</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class=" nav-link  m-2 " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 " href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active m-2" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav-Bar -->
+
+
+    <!-- contactForm-hero -->
+
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom text-light">
+        <h1 class="display-4 fw-bold">Centered screenshot</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 40vh;">
+            <div class="container px-5">
+                <img src="img/contact-hero.jpg" class="img-fluid rounded-3 shadow-lg mb-4" alt="contact image" height="400"
+                    loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- contactForm-hero -->
+
+
+    <!-- contactForm-section -->
+
+
+    <div class="container text-light">
+        <div class=" text-center mt-5 ">
+            <h1>Contact Form</h1>
+            <div style=" width: 30vh; height: 1vh; border-radius: 5px; " class=" mb-5 bg-light d-flex mx-auto" >
+                <p></p>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light shadow">
+                    <div class="card-body bg-light">
+
+                        <div class="container">
+                            <form id="contact-form" role="form">
+
+
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Firstname *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control"
+                                                    placeholder="Please enter your firstname *" required="required"
+                                                    data-error="Firstname is required.">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Lastname *</label>
+                                                <input id="form_lastname" type="text" name="surname"
+                                                    class="form-control" placeholder="Please enter your lastname *"
+                                                    required="required" data-error="Lastname is required.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                <input id="form_email" type="email" name="email" class="form-control"
+                                                    placeholder="Please enter your email *" required="required"
+                                                    data-error="Valid email is required.">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_need">Please specify your need *</label>
+                                                <select id="form_need" name="need" class="form-control"
+                                                    required="required" data-error="Please specify your need.">
+                                                    <option value="" selected disabled>--Select Your Issue--</option>
+                                                    <option>Request Invoice for order</option>
+                                                    <option>Request order status</option>
+                                                    <option>Haven't received cashback yet</option>
+                                                    <option>Other</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Message *</label>
+                                                <textarea id="form_message" name="message" class="form-control"
+                                                    placeholder="Write your message here." rows="4" required="required"
+                                                    data-error="Please, leave us a message."></textarea>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <br>
+                                            <input type="submit" class="btn btn-primary btn-send  pt-2 btn-block"
+                                                value="Send Message">
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <br><br>
+    </div>
+
+
+
+    <!-- contactForm-section -->
+
+
+
+    <!-- Foooter-section -->
+
+    <div class="container">
+        <footer class=" py-1 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="blogs.html" class="nav-link px-2 text-light">Blogs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact us</a></li>
+            </ul>
+            <p class="text-center text-light ">&copy; 2023 TitanFit, Inc</p>
+        </footer>
+    </div>
+
+    <!-- Foooter-section -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
