@@ -52,99 +52,184 @@
 
     <!-- blog-hero -->
 
-    <h1 class="visually-hidden">Heroes examples</h1>
 
     <div class="px-4 py-5 my-5 text-center text-light">
         <img class="d-block mx-auto mb-4" src="img/Blog-hero-logo.png" alt="" width="72" height="60">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <h1 class="display-5 fw-bold">Titan Fitness Center</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <p class="lead mb-4">"Get inspired and informed with Titan Fitness Center's blog page, featuring expert
+                insights on health and wellness, workout tips, nutrition advice, and more. Join our community of fitness
+                enthusiasts and stay up-to-date with the latest trends and developments in the fitness world."</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#sign-upModal"
+                    class="btn btn-primary btn-lg px-4 gap-3">Sign-up</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#sign-inModal"
+                    class="btn btn-outline-secondary btn-lg px-4">Sign-in</button>
             </div>
         </div>
     </div>
 
     <!-- blog-hero -->
 
+
+    <!-- Signin Modal -->
+
+
+    <div class="modal fade" id="sign-inModal" tabindex="-1" aria-labelledby="sign-inModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light ">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sign-inModalLabel">Sign-in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signin Modal -->
+
+
+
+
+    <!-- Signup Modal -->
+
+
+    <div class="modal fade" id="sign-upModal" tabindex="-1" aria-labelledby="#sign-upModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sign-upModalLabel">Sign-up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">All the primaryrmation is
+                                Correct</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Signup Modal -->
+
+
     <!-- Blogs-section -->
 
-<div class="bg-light" >
-<br>
-<h2 class="d-flex justify-content-center" >Blogs</h2>
-<div style=" width: 25vh; height: 1vh; border-radius: 5px; " class="bg-dark d-flex mx-auto" >
-<p></p>
-</div>
+    <div class="bg-light">
+        <br>
+        <h2 class="d-flex justify-content-center">Blogs</h2>
+        <div style=" width: 25vh; height: 1vh; border-radius: 5px; " class="bg-dark d-flex mx-auto">
+            <p></p>
+        </div>
 
-<br><br>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 w-75 mx-auto">
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 1</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+        <br><br>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 w-75 mx-auto">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Benefits of Strength Training</h5>
+                        <p class="card-text">How Resistance Workouts Can Boost Your Health and Fitness</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 2</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fueling Your Workouts</h5>
+                        <p class="card-text">Nutrition Tips and Meal Ideas for Before and After Exercise.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 3</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Power of Group Fitness</h5>
+                        <p class="card-text">Why Working Out with Others Can Boost Your Motivation and Results.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 4</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mind and Body Wellness</h5>
+                        <p class="card-text">The Connection Between Exercise and Mental Health</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 5</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Avoiding Common Workout Mistakes</h5>
+                        <p class="card-text">Tips and Techniques for Injury Prevention and Proper Form.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card 6</h5>
-              <p class="card-text">This is a sample card with some placeholder content.</p>
-              <button type="button" class="btn btn-primary">Learn More</button>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/card6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Workout Recovery</h5>
+                        <p class="card-text">Strategies for Rest and Relaxation to Maximize Your Results.</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-<br><br><br>
-</div>
+        <br><br><br>
+    </div>
 
     <!-- Blogs-section -->
 
